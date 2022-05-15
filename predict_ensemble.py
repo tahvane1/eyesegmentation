@@ -22,8 +22,7 @@ from dataset.openeds_dataset import OpenEDSDatasetTest
 
 ModelConfig = namedtuple("ModelConfig", "config_path weights_path weight")
 configs = [
-    ModelConfig("configs/efficientnet-b7.json", "weights/unet_efficientnet-b7.pt", 1),
-
+    ModelConfig(os.path.dirname(os.path.realpath(__file__)) + "/configs/efficientnet-b7.json", os.path.dirname(os.path.realpath(__file__)) + "/weights/unet_efficientnet-b7.pt", 1),
 ]
 
 

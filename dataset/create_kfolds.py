@@ -36,5 +36,5 @@ def main(labels_dir, labels_file, num_folds=10, random_state=42):
 
 
 if __name__ == '__main__':
-    main('/path/to/labels.txt-dir',
+    main('/opt/mount/data/images/openEDS2020-SparseSegmentation/participant',
          'labels.txt')
