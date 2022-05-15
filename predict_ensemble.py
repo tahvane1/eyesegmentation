@@ -159,7 +159,7 @@ def save_preds(args, preds_dict):
 def main():
     parser = argparse.ArgumentParser("OpenEDS One-by-One Predictor")
     arg = parser.add_argument
-    arg('--data-dir', type=str, default='openEDS2020-SparseSegmentation/participant')
+    arg('--data-path', type=str, default='openEDS2020-SparseSegmentation/participant')
     arg('--label-file', type=str,
         default='fold_0_val.txt',
         help='Text file with all images for inference')
